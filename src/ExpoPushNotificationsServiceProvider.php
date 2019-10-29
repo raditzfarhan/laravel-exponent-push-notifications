@@ -69,7 +69,7 @@ class ExpoPushNotificationsServiceProvider extends ServiceProvider
     protected function setupConfig()
     {
         $this->publishes([
-            __DIR__.'/../config/exponent-push-notifications.php' => config_path('exponent-push-notifications.php'),
+            __DIR__.'/../config/exponent-push-notifications.php' => base_path('exponent-push-notifications.php'),
         ], 'config');
 
         $this->mergeConfigFrom(__DIR__.'/../config/exponent-push-notifications.php', 'exponent-push-notifications');
